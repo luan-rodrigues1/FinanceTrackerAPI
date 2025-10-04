@@ -19,7 +19,7 @@ namespace FinanceTrackerAPI.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Description = table.Column<string>(type: "TEXT", nullable: false),
                     Amount = table.Column<decimal>(type: "TEXT", nullable: false),
-                    Type = table.Column<int>(type: "INTEGER", nullable: false),
+                    IsIncome = table.Column<bool>(type: "INTEGER", nullable: false),
                     Date = table.Column<DateTime>(type: "TEXT", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "TEXT", nullable: false)

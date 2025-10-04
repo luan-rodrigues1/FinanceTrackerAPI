@@ -11,5 +11,6 @@ namespace FinanceTrackerAPI.Data
         }
 
         public DbSet<TransactionModel> Transactions { get; set; }
+
     }
 }

@@ -36,7 +36,7 @@ namespace FinanceTrackerAPI.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Type")
+                    b.Property<bool>("IsIncome")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("UpdatedAt")

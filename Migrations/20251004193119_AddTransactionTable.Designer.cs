@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FinanceTrackerAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251003195455_AddTransactionTable")]
+    [Migration("20251004193119_AddTransactionTable")]
     partial class AddTransactionTable
     {
         /// <inheritdoc />
@@ -39,7 +39,7 @@ namespace FinanceTrackerAPI.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Type")
+                    b.Property<bool>("IsIncome")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("UpdatedAt")
