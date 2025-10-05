@@ -1,4 +1,6 @@
 /Data/*.db
+/Data/*.db-shm
+/Data/*.db-wal
 bin/
 obj/
 *.user
