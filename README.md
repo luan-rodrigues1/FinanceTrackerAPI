@@ -5,7 +5,7 @@
 - Entity Framework Core
 - SQLite
 - Swagger (OpenAPI)
-
+---
 ## Pré-requisitos
 
 - [.NET SDK 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
@@ -19,6 +19,8 @@
 git clone https://github.com/SEU_USUARIO/FinanceTrackerAPI.git
 cd FinanceTrackerAPI
 ```
+---
+
 ### Instale as dependências
 ```bash
 dotnet restore
@@ -31,6 +33,7 @@ O arquivo do banco será criado automaticamente na pasta Data/ quando você roda
     "DefaultConnection": "Data Source=Data/FinanceTracker.db"
 }
 ```
+---
 
 ### Rodando as migrations
 Atualizando o banco com as migrations existentes
@@ -46,12 +49,16 @@ Comando:
 ```bash
 dotnet ef database update
 ```
+---
+
 ### Rodando a API
 ```bash
 dotnet run
 ```
 Atenção: A API ficará disponível em https://localhost:7016 (ou http://localhost:5265) conforme configuração do launchSettings.json. 
 Swagger disponível em https://localhost:7016/swagger
+
+---
 
 ## Endpoints principais
 
@@ -63,6 +70,7 @@ Swagger disponível em https://localhost:7016/swagger
 | PUT    | `/api/transaction/{id}`   | Atualizar um lançamento                     |
 | DELETE | `/api/transaction/{id}`   | Excluir um lançamento                       |
 
+---
 
 ## Observações
 
